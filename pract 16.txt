@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*">
+
+    <!-- Заголовок -->
+    <TableRow>
+        <TextView
+            android:text="Регистрация"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+
+        <!-- Кнопка назад -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:src="@drawable/ic_back"
+            android:background="@android:color/transparent"
+            android:padding="16dp" />
+    </TableRow>
+
+    <!-- Первое поле для ввода -->
+    <TableRow>
+        <TextView
+            android:text="Имя:"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/name_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:padding="16dp" />
+    </TableRow>
+
+    <!-- Второе поле для ввода -->
+    <TableRow>
+        <TextView
+            android:text="Email:"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/email_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
+    </TableRow>
+
+    <!-- Третье поле для ввода -->
+    <TableRow>
+        <TextView
+            android:text="Пароль:"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/password_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:padding="16dp" />
+    </TableRow>
+
+    <!-- Кнопка регистрации -->
+    <TableRow>
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зарегистрироваться"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="16dp" />
+    </TableRow>
+
+</TableLayout>
+11111
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="7"
+    android:alignmentMode="alignBounds"
+    android:columnOrderPreserved="false">
+
+    <!-- Заголовок и изображение профиля -->
+    <TextView
+        android:text="Настройки"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/profile_imageview"
+        android:src="@drawable/profile_image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="centerCrop"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Четыре строки -->
+    <TextView
+        android:text="Профиль пользователя"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:text="Дата и время"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:text="Настройки звука"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:text="Проверить обновления"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Прямоугольник с изображениями -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="1"
+        android:layout_column="0"
+        android:layout_row="6"
+        android:layout_columnSpan="2"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:src="@drawable/icon_1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1" />
+ <ImageView
+            android:src="@drawable/icon_1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1" />
+ <ImageView
+            android:src="@drawable/icon_1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1" />
+ <ImageView
+            android:src="@drawable/icon_1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_columnWeight="1" />
+222222
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Заголовок -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Настройки"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/profile"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp" />
+    </RelativeLayout>
+
+    <!-- Четыре строки с информацией -->
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Профиль пользователя"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата и время"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Настройки звука"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Проверить обновления"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </GridView>
+
+    <!-- Прямоугольник с изображениями -->
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/image1" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/image2" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/image3" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/image4" />
+
+    </GridView>
+
+</LinearLayout
+2222
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Заголовок -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Календарь"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/profile"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp" />
+    </RelativeLayout>
+
+    <!-- Календарь -->
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/bottom_bar" />
+
+    <!-- Нижняя панель с кнопками -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f2f2f2"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отмена" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сохранить"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+333333
+
+        
